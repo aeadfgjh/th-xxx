@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 3.27)
+
+PROJECT (th_xxx)
+
+ADD_EXECUTABLE (
+    xxx
+    ./src/main.cpp
+)
+
+SET_PROPERTY (TARGET xxx PROPERTY CXX_STANDARD 17)
+SET (CMAKE_CXX_FLAGS "-stdlib=libc++")
